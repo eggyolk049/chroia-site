@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chroia Works</title>
+<meta name="description" content="Chroia Works(クロイアワークス)。記録は端末の中だけ、手で書くアプリを作る東京の個人事業です。">
+<meta property="og:title" content="Chroia Works">
+<meta property="og:description" content="記録は端末の中だけ。手で書くアプリを作っています。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chroia.jp/">
+<link rel="canonical" href="https://chroia.jp/">
+<link rel="icon" href="./oiko.png" type="image/png">
+<style>
+:root{
+  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --faint:#e6e6e6; --dim:#f7f7f7;
+  --ink:#1a1a1a;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#141414; --fg:#eaeaea; --muted:#9a9a9a; --faint:#2c2c2c; --dim:#1c1c1c; --ink:#eaeaea; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font-family:"Hiragino Sans","Yu Gothic UI","Noto Sans JP",system-ui,sans-serif;
+  line-height:1.9; font-size:15.5px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:680px; margin:0 auto; padding:0 24px 80px}
+header{padding:84px 0 36px}
+/* 六つの和色 — 「白地に色が宿る」の印 */
+.mark{display:flex; gap:4px; margin-bottom:22px}
+.mark i{display:block; width:12px; height:12px; border-radius:2px}
+h1{font-size:34px; font-weight:700; letter-spacing:.02em; margin:0 0 4px; line-height:1.3}
+.yomi{color:var(--muted); font-size:13px; letter-spacing:.14em; margin:0 0 22px}
+.tag{font-size:17px; margin:0 0 10px; max-width:34em; text-wrap:balance}
+.tag-en{color:var(--muted); font-size:13px; margin:0; max-width:40em}
+hr{border:0; border-top:1px solid var(--faint); margin:44px 0}
+h2{font-size:12.5px; letter-spacing:.2em; color:var(--muted); font-weight:600; margin:0 0 18px}
+p{margin:0 0 14px}
+.lead{color:var(--muted); font-size:13.5px; margin:-6px 0 18px}
+
+.apps{display:grid; gap:10px; margin:0; padding:0; list-style:none}
+.apps li{
+  display:grid; grid-template-columns:44px 1fr auto; gap:14px; align-items:center;
+  border:1px solid var(--faint); border-radius:8px; padding:12px 14px; background:var(--dim);
+}
+.apps img{width:44px; height:44px; border-radius:10px; border:1px solid var(--faint); background:#fff; display:block}
+.apps .n{font-weight:600; line-height:1.4}
+.apps .sub{display:block; color:var(--muted); font-size:12.5px; line-height:1.6}
+.apps .d{display:block; font-size:13.5px; line-height:1.6; margin-top:2px}
+.apps .act{display:flex; flex-direction:column; align-items:flex-end; gap:6px}
+.apps .s{
+  font-size:11px; color:var(--muted); white-space:nowrap;
+  border:1px solid var(--faint); border-radius:99px; padding:2px 10px; background:var(--bg);
+}
+
+.pillars{display:grid; gap:14px; margin:0; padding:0; list-style:none}
+.pillars li{padding:14px 16px; border-left:2px solid var(--fg)}
+.pillars b{display:block; font-weight:600; margin-bottom:2px}
+.pillars span{color:var(--muted); font-size:14px}
+
+.about dt{font-size:12.5px; color:var(--muted); margin-top:14px}
+.about dd{margin:2px 0 0}
+.note{color:var(--muted); font-size:12.5px}
+footer{margin-top:64px; font-size:12.5px; color:var(--muted)}
+footer a{color:var(--muted)}
+a{color:var(--fg); text-underline-offset:3px}
+@media (max-width:520px){
+  header{padding:64px 0 28px}
+  h1{font-size:30px}
+  .apps li{grid-template-columns:40px 1fr; }
+  .apps .act{grid-column:2; flex-direction:row; align-items:center; justify-content:flex-start; gap:12px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark" aria-hidden="true">
+    <i style="background:#2e8b57"></i><i style="background:#3b6fb6"></i><i style="background:#9b59b6"></i>
+    <i style="background:#e0b93a"></i><i style="background:#c8383c"></i><i style="background:#e67e22"></i>
+  </div>
+  <h1>Chroia Works</h1>
+  <p class="yomi">クロイアワークス</p>
+  <p class="tag">記録は端末の中だけ。手で書くアプリを作っています。</p>
+  <p class="tag-en">Chroia Works is a sole proprietorship in Tokyo, Japan, making small offline-first apps for keeping records by hand.</p>
+</header>
+
+<hr>
+
+<section id="products">
+  <h2>PRODUCTS</h2>
+  <p class="lead">まず家計簿から。ストア版(iOS / Android)の準備を進めています。</p>
+  <ul class="apps">
+    <li><img src="./oiko.png" alt="" loading="lazy"><div><span class="n">Oiko — 家計簿</span><span class="sub">手で書く家計簿</span><span class="d">記録・固定費・予算。記録はあなたの端末から出ません。</span></div><div class="act"><span class="s">App Store / Google Play 準備中</span></div></li>
+  </ul>
+</section>
+
+<hr>
+
+<section id="principles">
+  <h2>考えかた</h2>
+  <ul class="pillars">
+    <li><b>記録は、端末の中だけに。</b><span>入力した記録は、お客様の端末内に保存され、当方のサーバーへ送られません。解析も広告もありません。</span></li>
+    <li><b>持ち出せること。</b><span>記録はふつうの JSON で書き出せます(設定の「備え」)。アプリが無くなっても、中身はずっと読めます。</span></li>
+    <li><b>色は、続けた日々から。</b><span>記録を続けた人にだけ、ひとつずつ色が届きます。何もしないで届く色はありません。</span></li>
+  </ul>
+</section>
+
+<hr>
+
+<section id="about">
+  <h2>ABOUT</h2>
+  <dl class="about">
+    <dt>屋号</dt><dd>Chroia Works(クロイアワークス)</dd>
+    <dt>代表</dt><dd>嶋崎 幹大</dd>
+    <dt>所在地</dt><dd>〒105-0013 東京都港区浜松町2-2-15<wbr> 浜松町ダイヤビル2F</dd>
+    <dt>事業内容</dt><dd>スマートフォンおよびWeb向けアプリケーションの企画・開発・配信・販売</dd>
+    <dt>開業</dt><dd>2026年9月(個人事業)</dd>
+    <dt>名前について</dt><dd>Chroia(χροιά)は古典ギリシャ語で「ものの表面に宿る色あい」。使い込むほど色が宿る道具を、という願いから。</dd>
+    <dt>お問い合わせ</dt><dd><a href="mailto:info@chroia.jp">info@chroia.jp</a></dd>
+  </dl>
+  <p class="note" style="margin-top:22px">Chroia Works — sole proprietorship. 2-2-15 Hamamatsucho, Minato-ku, Tokyo 105-0013, Japan. Contact: info@chroia.jp</p>
+</section>
+
+<footer>
+  <p><a href="./support.html">サポート</a> / <a href="./privacy.html">プライバシーポリシー</a></p>
+  <p>&copy; 2026 Chroia Works</p>
+</footer>
+
+</div>
+</body>
+</html>
